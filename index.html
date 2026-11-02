@@ -299,7 +299,7 @@
    ============================================================ */
 function whats(n, msg){ return "https://wa.me/" + n + (msg ? "?text=" + encodeURIComponent(msg) : ""); }
 function tel(n){ return "tel:+" + n.replace(/^\+/, ""); }
-
+function tel0800(n){ return "tel:" + n.replace(/\D/g, ""); }
 var CONFIG = {
   links: {
     "maps":        "https://www.google.com/maps/search/?api=1&query=Marcilio+Seguros",
@@ -313,7 +313,7 @@ var CONFIG = {
     "thayane-tel":    tel("5583991646040"),
     "seguradora-whats":   whats("552140042702"),
     "seguradora-tel-metropolis": tel("5511 40040237"),
-    "seguradora-tel-demais":     tel("08002370237"),
+    "seguradora-tel-demais": tel0800("08002370237"),
     "equipe-whats": whats("558335132123"),
     "equipe-tel":   tel("5583 35132123")
   }
